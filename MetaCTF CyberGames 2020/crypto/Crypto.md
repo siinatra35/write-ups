@@ -31,8 +31,9 @@ Step 2:
 We notice that its being compressed into a gzip.
 We use the extract files and notice that one file was found.
 
-Step 3:
+![file](https://i.imgur.com/viscGsT.png)
 
+Step 3:
 We extract using gunzip and we recive the flag
 
 flag:`Write-host "The flag is in the encoded payload"; $qq = "MetaCTF{peeling_back_the_flag_one_code_at_a_time}"`
