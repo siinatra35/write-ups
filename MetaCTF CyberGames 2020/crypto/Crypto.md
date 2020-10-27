@@ -1,13 +1,14 @@
 challenge: __Crypto Stands For Cryptography__
 Uses base64 encryption
 `TWV0YUNURntiYXNlNjRfZW5jMGRpbmdfaXNfbjB0X3RoZV9zYW1lX2FzX2VuY3J5cHRpMG4hfQ==`
+
 __Solution__ 
 Use cyberchef and use From base64 recipe to decrypt.
 output: `MetaCTF{base64_enc0ding_is_n0t_the_same_as_encrypti0n!}`
 
 ------------------------------------------------------
 
-challenge: __Welcome to the Obfuscation Games!__Crypto
+challenge: __Welcome to the Obfuscation Games!__
 
 decrypt:
 ```
@@ -16,7 +17,7 @@ $s=New-Object IO.MemoryStream(,[Convert]::FromBase64String("H4sIAEFgjl8A/xXMMQrC
 IEX (New-Object IO.StreamReader(New-Object IO.Compression.GzipStream($s,[IO.Compression.CompressionMode]::Decompress))).ReadToEnd();
 ```
 Solution:
-**Step 1: 
+Step 1: 
 We grab the encrypted text and use the from base64 in cyberchef.
 After doing this we get:
 ```
@@ -25,21 +26,22 @@ After doing this we get:
 =.z.j...
 
 ```
-**Step 2: 
+Step 2: 
 We notice that its being compressed into a gzip.
 We use the extract files and notice that one file was found.
 
-**Step 3:
+Step 3:
 We extract using gunzip and we recive the flag
 `Write-host "The flag is in the encoded payload"; $qq = "MetaCTF{peeling_back_the_flag_one_code_at_a_time}"`
-
-challenge __ROT 26__
+-------------------------------------------
+challenge: __ROT 26__
 
 decrypt: ```g!0{]n`7*+0y~+1|(!y.+0yKM9```
 
 Step 1:
 We notice that it uses ROT encryption
 We can either use a python script or a simple online tool.
+
 https://www.dcode.fr/rot-cipher
 
 
