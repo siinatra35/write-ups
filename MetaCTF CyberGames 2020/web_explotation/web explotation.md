@@ -20,6 +20,7 @@ if(password!="MetaCTF{So_You_Wanna_Play_With_Magic}"){
 challenge:__Barry’s Web Application__
 
 We are directed to barry's website. 
+
 ![barry](https://i.imgur.com/tcxPUOq.png)
 
 After inspecting the source code we find nothing of interest.
