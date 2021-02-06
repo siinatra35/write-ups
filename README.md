@@ -1,4 +1,4 @@
-# write-ups
+# write-ups :triangular_flag_on_post:
 write ups from CTFs and HTB walkthroughs
 
 Table of contents 
