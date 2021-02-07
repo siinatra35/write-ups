@@ -46,7 +46,7 @@ Using the Metasploit console we search for these exploits. We enter `msfconsole`
 Out of all of these exploits, the MS08-067 Microsoft Server Service Relative Path Stack Corruption and the MS17-010 EternalRomance/EternalSynergy/EternalChampion SMB Remote Windows Code Execution seem to be the most promising. So let's try the first one and see what happens...
 
 <h2>Exploit execution</h2>
-Staying the Metasploit console we enter `use exploit/windows/smb/ms08_067_netapi` to start the module. We then enter the target ip and port numbers which in this case are 10.10.10.4 and 445. And set our host ip which will be kali. 
+Staying the Metasploit console we enter <code>use exploit/windows/smb/ms08_067_netapi</code> to start the module. We then enter the target ip and port numbers which in this case are 10.10.10.4 and 445. And set our host ip which will be kali. 
 
 ![setting](https://i.imgur.com/9nt1UHJ.png)
 
