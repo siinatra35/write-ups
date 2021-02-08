@@ -1,5 +1,5 @@
 # write-ups :triangular_flag_on_post:
-write ups from CTFs and HTB walkthroughs
+write ups from CTFs and Hackthebox walkthroughs
 
 Table of contents 
 
