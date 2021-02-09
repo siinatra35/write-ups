@@ -5,7 +5,7 @@ timeframe of Threat Actor activity: C:\123.tmp.
 Can you check it out?
 
 Solution we use the linux command `strings`
-and get the flag. We run `strings 123.tmp | Meta` and 
+and get the flag. We run `strings 123.tmp | grep Meta` and 
 the output will be:
 
 ![strings](https://i.imgur.com/3ajkjw4.png)
