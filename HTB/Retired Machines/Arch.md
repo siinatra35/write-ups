@@ -110,9 +110,18 @@ We find a `prod.dtsConfig` file, using the get command we can retrieve this file
 It has a ID: <code>ARCHETYPE\sql_svc</code> and a password: <code>M3g4c0rp123
 </code>. Using impackets [mssqlclient.py](https://github.com/SecureAuthCorp/impacket/blob/master/examples/mssqlclient.py) script we can connect the sql server using the its id and password. 
 
-We enter <code>python3 mmssqlclient.py ARCHETYPE/sql_svc@10.10.10.27 -windows-auth</code>
+We enter <code>python3 mmssqlclient.py ARCHETYPE/sql_svc@10.10.10.27 -windows-auth</code>. This allows us to connect to sql server. we
 
 </p>
+
+
+<!--
+doc on issrvrolemember 
+
+link: https://docs.microsoft.com/en-us/sql/t-sql/functions/is-srvrolemember-transact-sql?view=sql-server-ver15 
+
+-->
+
 
 
 
