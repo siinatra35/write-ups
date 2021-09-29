@@ -24,3 +24,8 @@ We try ssh but we need the proper credentials in order to gain access. We can tr
 <p>Since port 80 is open its safe to assume that we can find a website. However we can't really get much info form this site....seems to be some medical site but not much to look at.</p>
 
 ![site](https://imgur.com/tUCeiwn.png)
+
+
+After doing some snooping around in the site I noticed that its using php. So lets take a look at what version its using. To do this I just used nmap again `nmap -sV --script=http-php-version 10.10.10.242` and this was the output. 
+
+![phpinfo](https://imgur.com/RqscCs9.png)
