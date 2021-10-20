@@ -1,8 +1,8 @@
 # write-ups :triangular_flag_on_post:
 Write ups from CTFs and Hackthebox walkthroughs
 
-I will NOT upload any active machine walkthroughs, only machines that are retired.
-Also if your here just topy the flag...well that won't work since its a randomaly generated hash.
+I will NOT upload any active machine walkthroughs, only machines that are retired.<br>
+Also if your here just copy the flag...well that won't work since its a randomaly generated hash.
 
 Table of contents 
 
