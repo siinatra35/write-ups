@@ -39,11 +39,23 @@ To get some idea of what possible routes I could take I used the systeminfo comm
 ![system info](https://i.imgur.com/kNLqyzV.png)
 
 
+However every attempt I tried to get ms11-046 (priv sec exploit) was unsuccful. I tried using powershell to pull the exe through http by using a python server that I hosted within kali. 
+
+
+Soo I said screw it and used metasploit....
+
+I am trying to move away from metasploit but still need some practice perhaps I'll find a new way in the future and will update this.
+
+From here I simply used <code>msfconsole</code> to open the metasploit framework and search key words such as IIS and webdev and this was found 
+
+![search](https://i.imgur.com/N8v3OG7.png)
+
+from the results I used <code>windows/iis/iis_webdav_scstoragepathfromurl</code>
+
+Set the victim ip and my kali ip.
+
+![shell](https://i.imgur.com/66y2r1S.png)
 
 
 
-
-
-
-
-
+From here I navigated to the user and admin folder to get the flags.
