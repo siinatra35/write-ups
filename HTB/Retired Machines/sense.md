@@ -15,8 +15,8 @@
 
 ![loginpage](https://imgur.com/XMDZiMD.png)
 
-Not much information can be taken from this login page other then its pfsenese.
-So next was to run a directory scan using gobuster and 2 interesting files were found. A changelog.txt and a systemusers.txt file that listeded 1 exploit is unpatched on this service and the other listing the username for the login page.
+Not much information can be taken from this login page other then its pfsense.
+So next was to run a directory scan using gobuster and 2 interesting files were found. A changelog.txt and a systemusers.txt file that listed 1 exploit is unpatched on this service and the other listing the username for the login page.
 
 ![gobuser](https://imgur.com/kvFO8T8.png)
 
@@ -28,8 +28,8 @@ So next was to run a directory scan using gobuster and 2 interesting files were 
 
 ![systemusers](https://imgur.com/KzHy2RF.png)
 
-Once logged in using <code>Rohtin:pfsense</code>
-Since pfsence is the defualt password for pfsense.
+Once logged in using <code>Rohit:pfsense</code>
+Since pfsense is the defualt password for pfsense.
 
 ![pass](https://imgur.com/6PSIo6A.png)
 
