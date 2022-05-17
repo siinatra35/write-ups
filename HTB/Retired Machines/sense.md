@@ -29,7 +29,7 @@ So next was to run a directory scan using gobuster and 2 interesting files were 
 ![systemusers](https://imgur.com/KzHy2RF.png)
 
 Once logged in using <code>Rohit:pfsense</code>
-Since pfsense is the defualt password for pfsense.
+Since pfsense is the default password for pfsense.
 
 ![pass](https://imgur.com/6PSIo6A.png)
 
@@ -41,7 +41,7 @@ We can see the pfsense version number that can be used to find a exploit.
 
 <h2>Exploit</h2>
 
-After some googling for exploits for pfsenese 2.1.3 I found a RCE exploit.
+After some googling for exploits for pfsense 2.1.3 I found a RCE exploit.
 
 - pfSense < 2.1.4 - 'status_rrd_graph_img.php' Command Injection
     - CVE 2014-4688
