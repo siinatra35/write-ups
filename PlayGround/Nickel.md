@@ -1,6 +1,5 @@
 <h1>Nickel</h1>
 
-<h2>Nmap Scan</h2>
 
 ```
 
@@ -48,9 +47,6 @@
     # Nmap done at Mon May 22 19:52:29 2023 -- 1 IP address (1 host up) scanned in 83.17 seconds
 
 ```
-
-<h2>HTTP Port 8089 and 33333 Enumeration</h2>
-
 <p>When entering http://192.168.212.99:8089 in the web browser we see a web gui with three buttons, but when I visit http://192.168.212.88:33333 nothing seems to load only a message saying Invalid Token</p>
 
 
@@ -100,4 +96,42 @@ cmd used: `curl -d "" -X POST  http://192.168.166.99:33333/list-running-procs`
 
 ![Empty Post Request](https://imgur.com/IUGSR7L.png)
 
-<p>And it worked we see a list of running processes, and looks like it contains some credentials.</p>
+<p>And it worked we see a list of running processes, and looks like it contains some credentials. I tossed the password in cyberchef and decoded it to NowiseSloopTheory139</p>
+
+
+<p>Using these credentials we can ssh to the host. Doing this I was able to grab the user flag and and snoop around the system, I tried some of the basic privilege escalation techniques but all were not successful. But I remember there was a ftp port that I totally forgot was in the nmap scan so I tried logging in as ariah.<p>
+
+![FTP Login](https://imgur.com/yfceW0G.png)
+
+There was only a pdf file, so I pulled it into my machine.
+
+![FTP GET](https://imgur.com/zihUsaH.png)
+
+And the pdf is password protected so I ran pdfcrack on it and was able to get the password for it.
+
+![pdfcrack](https://imgur.com/xSvPDr5.png)
+
+And the pdf showed some urls, but port 80 never showed in the nmap scan so I think I missed something in machine.
+
+![PDF Contents](https://imgur.com/Y6BFStV.png)
+
+So I ssh back into the host and ran netstat since I sadly didn't think of that in the beginning. And the netstat showed port 80 opened and listening. 
+
+![netstat -aon](https://imgur.com/q7ZkO6E.png)
+
+So since http://nickel/? looks like it takes some sort of query I passed a whoami command into it to see the output.
+
+![curl whoami](https://imgur.com/D2yCGtd.png)
+
+And ye it worked, so next best thing is lets just use a url encoded net command to add ariah to the admin group.
+
+![net commmand](https://imgur.com/lgNjE9v.png)
+
+
+![proof.txt](https://imgur.com/Lb8KwWe.png)
+
+
+
+
+
+
